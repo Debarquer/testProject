@@ -22,7 +22,7 @@ function printProfile()
 				
 				echo '<div class="postContainer">';
 					echo '<div class="left">';
-						echo '<a href="http://localhost:8080/forum/index.php?thread=' . $rowPosts["thread"] . '">' . $rowThread["name"] . '</a>';
+						echo '<a href="http://localhost:8080/forum/code/index.php?thread=' . $rowPosts["thread"] . '">' . $rowThread["name"] . '</a>';
 						echo '<br>Date: ' . $rowPosts["date"];
 					echo '</div>';
 					echo '<div class="middle">';

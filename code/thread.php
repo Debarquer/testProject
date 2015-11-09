@@ -54,9 +54,9 @@ function thread()
 				 
 				 echo '<div class="postContainer">';
 					echo '<div class="left">
-							<img src="image.jpg"></img>
+							<img src="..\resources\image.jpg"></img>
 							<br>
-							Username <br><a href="http://localhost:8080/forum/index.php?user=' . $row["poster"] . '">' . $row2["username"] . '</a>
+							Username <br><a href="http://localhost:8080/forum/code/index.php?user=' . $row["poster"] . '">' . $row2["username"] . '</a>
 							<br> Date: <br>' . $row["date"] . '
 						</div>';
 					echo '<div class="middle">

@@ -53,7 +53,7 @@ function printHeader()
 			</div>
 			<br>';
 	}
-	echo '<a href="http://localhost:8080/forum/index.php?page=front">Front page</a>';
+	echo '<a href="http://localhost:8080/forum/code/index.php?page=front">Front page</a>';
 	echo '</div>';
 }
 

@@ -1,7 +1,7 @@
 //header
 #header
 {
-	width:100%;
+	width:900px;
 	height:200px;
 	background-color:grey;
 }
@@ -39,7 +39,8 @@ a:active
 #threads
 {
 	width:1000px;
-	background-color:#C0C0C0;
+	height:200px;
+	background-color:black;
 	
 	margin-left:200px;
 }

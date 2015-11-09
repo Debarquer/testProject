@@ -87,7 +87,7 @@ function printCategory()
 			//echo '<div class="leftCategory"><button value=' . $row["pk"] . ' name="thread">' . $row["name"] . '	</button></form></div><div class="rightCategory"><form class="deleteThread" method="post"><button value=' . $row["pk"] . ' name="deleteThread">Delete thread</button></form></div>';			 
 			echo '
 			<div class="leftCategory">
-				<a href="http://localhost:8080/forum/index.php?thread=' . $row["pk"] . '">' . $row["name"] . '</a>
+				<a href="http://localhost:8080/forum/code/index.php?thread=' . $row["pk"] . '">' . $row["name"] . '</a>
 				<br><br> Amount of posts: ' . $numPosts . '&nbsp&nbsp&nbsp&nbsp&nbsp Last post ' . $date . ' by <a href="http://localhost:8080/forum/index.php?user=' . $poster . '">' . $poserName . '</a>
 			</div>
 			<div class="rightCategory">
