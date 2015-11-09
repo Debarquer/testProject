@@ -1,0 +1,135 @@
+//header
+#header
+{
+	width:100%;
+	height:200px;
+	background-color:grey;
+}
+
+//generic
+table
+{
+	border:1px solid black;
+}
+
+a:link {
+	text-decoration: none;
+	color:black;
+}
+
+a:visited 
+{
+	text-decoration: none;
+	color:black;
+}
+
+a:hover 
+{
+	text-decoration: underline;
+}
+
+a:active 
+{
+	text-decoration: underline;
+}
+
+//categories
+
+/threads
+#threads
+{
+	width:1000px;
+	background-color:#C0C0C0;
+	
+	margin-left:200px;
+}
+.leftCategory
+{
+	background-color:grey;
+	height:50px;
+	width:800px;
+	margin-left:50px;
+	
+	padding:20px;
+	
+	border-width:1px;
+	border-style:solid;
+}
+.rightCategory
+{
+	background-color:grey;
+	height:90px;
+	width:100px;
+	
+	margin-left:891px;
+	margin-top:-92px;
+	
+	border-width:1px;
+	border-style:solid;	
+}
+
+//posts
+.title
+{
+	margin-left:50px;	
+}
+.threadContainer
+{
+	width:800px;
+	margin-left:200px;
+	padding:50px;
+	background-color:#C0C0C0;
+}
+.postContainer
+{
+	width:700px;
+	height:142px;
+	background-color:grey;
+	margin-left:50px;
+}
+.left
+{
+	width:150px;
+	height:130px;
+	background-color:grey;
+	margin-left:0xp;
+	border-width:2px;
+	border-style:solid;
+	padding:5px;
+	
+	word-wrap: break-word;
+}
+.middle
+{
+	width:495px;
+	height:130px;
+	margin-left:150px;
+	margin-top:-144px;
+	background-color:grey;
+	
+	padding:5px;
+	
+	border-width:2px;
+	border-style:solid;
+	
+	word-wrap: break-word;
+}
+.right
+{
+	width:55px;
+	height:140px;
+	margin-left:657px;
+	margin-top:-144px;
+	background-color:grey;
+
+	border-width:2px;
+	border-style:solid;
+}
+.submitPost
+{
+	width:500px;
+	height:90px;
+}
+
+//profile
+
