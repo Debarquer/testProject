@@ -2,19 +2,13 @@
 
 function printCategories()
 {
-	if(isset($_POST["content"]))
+
+	if(isset($_SESSION["type"]))
 	{
-		$sql = "insert into categories (name) values ('$_POST[content]')";
-		
-		$result = $_SESSION["conn"]->query($sql);
-	}
-	
-	if(isset($_SESSION["loggedin"]))
-	{
-		if($_SESSION["loggedin"] == "true")
+		if($_SESSION["type"] == "admin")
 		{
 			echo '<br>
-				Add thread: <br>
+				Add category: <br>
 				<form method="POST">
 					<input type="text" name="content">
 					<input type="submit">
@@ -22,20 +16,33 @@ function printCategories()
 				';
 		}
 	}
-	
+
 	$sql = "SELECT * FROM categories";
 
 	$result = $_SESSION["conn"]->query($sql);
-	
-	echo '<div id="threads">Categories:';
-	
-	if ($result->num_rows > 0) 
-	{	
-		echo '<div id="leftCategory">Category</div><div id="rightCategory">Delete</div>';
+
+	echo '<div class="threads">Categories:';
+
+	if ($result->num_rows > 0)
+	{
+		echo '<div class="leftCategory">Category</div>';
+		if(isset($_SESSION["type"]))
+		{
+			if($_SESSION["type"] == "admin")
+			{
+				echo'<div class="rightCategory">Delete</div>';
+			}
+		}
 		while($row = $result->fetch_assoc())
 		{
-			echo '<div id="leftCategory"><form class="category" method="get"><button value=' . $row["pk"] . ' name="category">' . $row["name"] . '	</button></form></div>';
-			echo '<div id="rightCategory"><form class="deleteCategory" method="post"><button value=' . $row["pk"] . ' name="deleteCategory">Delete category</button></form></div>';			 
+			echo '<div class="leftCategory"><form class="category" method="get"><button value=' . $row["pk"] . ' name="category">' . $row["name"] . '	</button></form></div>';
+			if(isset($_SESSION["type"]))
+			{
+				if($_SESSION["type"] == "admin")
+				{
+					echo '<div class="rightCategory"><form class="deleteCategory" method="post"><button value=' . $row["pk"] . ' name="deleteCategory">Delete category</button></form></div>';
+				}
+			}
 		}
 	}
 	echo '</div>';

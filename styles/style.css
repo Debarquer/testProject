@@ -1,12 +1,16 @@
-//header
+body{
+	background-color:pink;
+}
+
+/*header*/
 #header
 {
 	width:900px;
 	height:200px;
-	background-color:grey;
+	background-color:pink;
 }
 
-//generic
+/*generic*/
 table
 {
 	border:1px solid black;
@@ -17,32 +21,32 @@ a:link {
 	color:black;
 }
 
-a:visited 
+a:visited
 {
 	text-decoration: none;
 	color:black;
 }
 
-a:hover 
+a:hover
 {
 	text-decoration: underline;
 }
 
-a:active 
+a:active
 {
 	text-decoration: underline;
 }
 
-//categories
+/*categories*/
 
-/threads
-#threads
+/*threads*/
+.threads
 {
 	width:1000px;
-	height:200px;
-	background-color:black;
-	
-	margin-left:200px;
+	height:100%;
+	background-color:orange;
+
+	margin-left:250px;
 }
 .leftCategory
 {
@@ -50,9 +54,9 @@ a:active
 	height:50px;
 	width:800px;
 	margin-left:50px;
-	
+
 	padding:20px;
-	
+
 	border-width:1px;
 	border-style:solid;
 }
@@ -61,31 +65,17 @@ a:active
 	background-color:grey;
 	height:90px;
 	width:100px;
-	
+
 	margin-left:891px;
 	margin-top:-92px;
-	
+
 	border-width:1px;
-	border-style:solid;	
+	border-style:solid;
 }
 
-//posts
+/*posts*/
 .title
 {
-	margin-left:50px;	
-}
-.threadContainer
-{
-	width:800px;
-	margin-left:200px;
-	padding:50px;
-	background-color:#C0C0C0;
-}
-.postContainer
-{
-	width:700px;
-	height:142px;
-	background-color:grey;
 	margin-left:50px;
 }
 .left
@@ -97,7 +87,7 @@ a:active
 	border-width:2px;
 	border-style:solid;
 	padding:5px;
-	
+
 	word-wrap: break-word;
 }
 .middle
@@ -107,12 +97,12 @@ a:active
 	margin-left:150px;
 	margin-top:-144px;
 	background-color:grey;
-	
+
 	padding:5px;
-	
+
 	border-width:2px;
 	border-style:solid;
-	
+
 	word-wrap: break-word;
 }
 .right
@@ -132,5 +122,4 @@ a:active
 	height:90px;
 }
 
-//profile
-
+/*profile*/
